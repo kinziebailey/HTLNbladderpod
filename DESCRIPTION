@@ -1,10 +1,22 @@
 Package: HTLNbladderpod
-Title: What the Package Does (One Line, Title Case)
+Title: Package for importing, exporting, querying, and summarizing HTLN bladderpod data. 
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
+    person("Kinzie", "Harris",
+           role = c("aut", "cre"), 
+           email = "kinzie_bailey@partner.nps.gov",
+           comment = c(ORCID = "0000-0001-8210-8370"))
+Maintainer: Kinzie Harris <kinzie_bailey@partner.nps.gov>
+Description: Package imports bladderpod data from the Microsoft Access database.
+  Additionall features will allow for querying, summarizing, and visualizing the
+  data, specifically designed for parks in the Heartland Network. 
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+LazyData: true
+Suggests: 
+    DBI,
+    odbc
+Imports: 
+    dplyr
